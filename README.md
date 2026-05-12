@@ -6,6 +6,8 @@ A fan-made animated Codex pet inspired by a red clover spark-mage character desi
 
 ## GIF Previews
 
+GIF previews use a light checkerboard background so transparent sprite edges are easy to inspect on GitHub.
+
 | Idle | Running Right | Running Left |
 | --- | --- | --- |
 | ![Idle](gifs/idle.gif) | ![Running right](gifs/running-right.gif) | ![Running left](gifs/running-left.gif) |
