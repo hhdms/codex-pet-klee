@@ -4,6 +4,20 @@ A fan-made animated Codex pet inspired by a red clover spark-mage character desi
 
 ![Contact sheet](qa/contact-sheet.png)
 
+## GIF Previews
+
+| Idle | Running Right | Running Left |
+| --- | --- | --- |
+| ![Idle](gifs/idle.gif) | ![Running right](gifs/running-right.gif) | ![Running left](gifs/running-left.gif) |
+
+| Waving | Jumping | Failed |
+| --- | --- | --- |
+| ![Waving](gifs/waving.gif) | ![Jumping](gifs/jumping.gif) | ![Failed](gifs/failed.gif) |
+
+| Waiting | Running | Review |
+| --- | --- | --- |
+| ![Waiting](gifs/waiting.gif) | ![Running](gifs/running.gif) | ![Review](gifs/review.gif) |
+
 ## Install
 
 Copy the pet folder into your Codex pets directory:
@@ -20,6 +34,7 @@ Then restart Codex and choose the pet from the pet picker.
 
 - `pet/klee/pet.json` - Codex pet manifest
 - `pet/klee/spritesheet.webp` - animated pet spritesheet
+- `gifs/*.gif` - per-state animated GIF previews
 - `qa/contact-sheet.png` - generated QA contact sheet
 
 ## Notes
