@@ -34,9 +34,8 @@ cd codex-pet-klee
 Copy the pet files into your local Codex pets directory:
 
 ```bash
-mkdir -p ~/.codex/pets/klee
-cp pet/klee/pet.json ~/.codex/pets/klee/
-cp pet/klee/spritesheet.webp ~/.codex/pets/klee/
+mkdir -p ~/.codex/pets
+cp -R pet/klee ~/.codex/pets/
 ```
 
 You can also install it manually in Finder:
@@ -44,8 +43,7 @@ You can also install it manually in Finder:
 1. Open this repository folder.
 2. Open `pet/klee`.
 3. Press `Command + Shift + G` in Finder and go to `~/.codex/pets`.
-4. Create a folder named `klee` if it does not exist.
-5. Copy `pet.json` and `spritesheet.webp` into `~/.codex/pets/klee`.
+4. Copy the whole `klee` folder into `~/.codex/pets`.
 
 Restart Codex, then choose `Klee` from the pet picker.
 
@@ -54,9 +52,8 @@ Restart Codex, then choose `Klee` from the pet picker.
 Copy the pet files into your local Codex pets directory with PowerShell:
 
 ```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\pets\klee"
-Copy-Item "pet\klee\pet.json" "$env:USERPROFILE\.codex\pets\klee\"
-Copy-Item "pet\klee\spritesheet.webp" "$env:USERPROFILE\.codex\pets\klee\"
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\pets"
+Copy-Item "pet\klee" "$env:USERPROFILE\.codex\pets\" -Recurse -Force
 ```
 
 You can also install it manually in File Explorer:
@@ -64,8 +61,7 @@ You can also install it manually in File Explorer:
 1. Open this repository folder.
 2. Open `pet\klee`.
 3. Open `%USERPROFILE%\.codex\pets` in File Explorer.
-4. Create a folder named `klee` if it does not exist.
-5. Copy `pet.json` and `spritesheet.webp` into `%USERPROFILE%\.codex\pets\klee`.
+4. Copy the whole `klee` folder into `%USERPROFILE%\.codex\pets`.
 
 Restart Codex, then choose `Klee` from the pet picker.
 
