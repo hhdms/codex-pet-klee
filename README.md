@@ -22,7 +22,16 @@ GIF previews use a light checkerboard background so transparent sprite edges are
 
 ## Install
 
-Copy the pet folder into your Codex pets directory:
+Download or clone this repository first:
+
+```bash
+git clone https://github.com/hhdms/codex-pet-klee.git
+cd codex-pet-klee
+```
+
+### macOS
+
+Copy the pet files into your local Codex pets directory:
 
 ```bash
 mkdir -p ~/.codex/pets/klee
@@ -30,7 +39,35 @@ cp pet/klee/pet.json ~/.codex/pets/klee/
 cp pet/klee/spritesheet.webp ~/.codex/pets/klee/
 ```
 
-Then restart Codex and choose the pet from the pet picker.
+You can also install it manually in Finder:
+
+1. Open this repository folder.
+2. Open `pet/klee`.
+3. Press `Command + Shift + G` in Finder and go to `~/.codex/pets`.
+4. Create a folder named `klee` if it does not exist.
+5. Copy `pet.json` and `spritesheet.webp` into `~/.codex/pets/klee`.
+
+Restart Codex, then choose `Klee` from the pet picker.
+
+### Windows
+
+Copy the pet files into your local Codex pets directory with PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\pets\klee"
+Copy-Item "pet\klee\pet.json" "$env:USERPROFILE\.codex\pets\klee\"
+Copy-Item "pet\klee\spritesheet.webp" "$env:USERPROFILE\.codex\pets\klee\"
+```
+
+You can also install it manually in File Explorer:
+
+1. Open this repository folder.
+2. Open `pet\klee`.
+3. Open `%USERPROFILE%\.codex\pets` in File Explorer.
+4. Create a folder named `klee` if it does not exist.
+5. Copy `pet.json` and `spritesheet.webp` into `%USERPROFILE%\.codex\pets\klee`.
+
+Restart Codex, then choose `Klee` from the pet picker.
 
 ## Files
 
