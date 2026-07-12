@@ -2,7 +2,19 @@
 
 A fan-made animated Codex pet inspired by a red clover spark-mage character design.
 
+This package uses the Codex pet v2 format, preserving all nine standard animation states and adding 16 clockwise looking directions.
+
 ![Contact sheet](qa/contact-sheet.png)
+
+![Looking directions](qa/look-directions.png)
+
+## Pet Format
+
+- `spriteVersionNumber: 2`
+- `1536x2288` WebP atlas
+- `8x11` grid with `192x208` cells
+- Rows 0-8: standard Codex pet animations
+- Rows 9-10: 16 looking directions from `000` through `337.5` degrees
 
 ## GIF Previews
 
@@ -68,9 +80,11 @@ Restart Codex, then choose `Klee` from the pet picker.
 ## Files
 
 - `pet/klee/pet.json` - Codex pet manifest
-- `pet/klee/spritesheet.webp` - animated pet spritesheet
+- `pet/klee/spritesheet.webp` - v2 animated pet spritesheet with looking directions
 - `gifs/*.gif` - per-state animated GIF previews
-- `qa/contact-sheet.png` - generated QA contact sheet
+- `qa/contact-sheet.png` - generated 11-row QA contact sheet
+- `qa/look-directions.png` - focused neutral-plus-16-directions QA sheet
+- `qa/validation.json` - deterministic v2 atlas validation result
 
 ## Notes
 
